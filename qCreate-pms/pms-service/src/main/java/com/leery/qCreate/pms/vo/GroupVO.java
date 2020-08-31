@@ -8,8 +8,8 @@ import lombok.Data;
 import java.util.List;
 
 /**
- * @author jiangli
- * @since 2020/1/11 13:27
+ * @author leery
+ * @since 2020/08/31 13:27
  */
 @Data
 public class GroupVO extends AttrGroup {
