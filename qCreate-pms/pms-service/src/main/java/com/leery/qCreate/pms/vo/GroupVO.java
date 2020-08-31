@@ -17,4 +17,5 @@ public class GroupVO extends AttrGroup {
 	private List<Attr> attrEntities;
 
 	private List<AttrAttrgroupRelation> relations;
+
 }
