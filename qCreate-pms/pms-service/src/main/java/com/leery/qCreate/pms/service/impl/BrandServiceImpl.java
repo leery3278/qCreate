@@ -11,16 +11,14 @@ import com.java.core.bean.PageVo;
 import com.java.core.bean.Query;
 import com.java.core.bean.QueryCondition;
 
-
-
 @Service("brandService")
 public class BrandServiceImpl extends ServiceImpl<BrandDao, Brand> implements BrandService {
 
     @Override
     public PageVo queryPage(QueryCondition params) {
         IPage<Brand> page = this.page(
-                new Query<Brand>().getPage(params),
-                new QueryWrapper<>()
+            new Query<Brand>().getPage(params),
+            new QueryWrapper<>()
         );
 
         return new PageVo(page);

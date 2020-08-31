@@ -9,7 +9,6 @@ import lombok.Data;
 @Data
 public class QueryCondition {
 
-
     @ApiModelProperty(name = "page",value = "页码",required = false)
     private Long page;
 
@@ -27,4 +26,5 @@ public class QueryCondition {
 
 	@ApiModelProperty(name = "key",value = "搜索关键字",required = false)
     private String key;
+
 }

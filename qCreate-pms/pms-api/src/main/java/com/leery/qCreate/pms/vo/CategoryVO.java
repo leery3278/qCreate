@@ -6,8 +6,8 @@ import lombok.Data;
 import java.util.List;
 
 /**
- * @author jiangli
- * @since 2020/1/18 22:30
+ * @author leery
+ * @since 2020/8/31 08:57
  */
 @Data
 public class CategoryVO extends Category {

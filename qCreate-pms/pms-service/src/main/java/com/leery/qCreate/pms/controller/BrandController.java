@@ -13,14 +13,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
 
-
-
-
-
 /**
  * 品牌
- * @author jiangli
- * @since  2020-01-10 04:05:29
+ * @author leery
+ * @since  2020-08-31 09:13:29
  */
 @Api(tags = "品牌管理")
 @RestController
@@ -40,7 +36,6 @@ public class BrandController {
 
         return Resp.ok(page);
     }
-
 
     /**
      * 信息
