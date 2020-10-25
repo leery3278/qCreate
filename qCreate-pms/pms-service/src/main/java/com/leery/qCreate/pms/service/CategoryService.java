@@ -12,8 +12,8 @@ import java.util.List;
 /**
  * 商品三级分类
  *
- * @author jiangli
- * @since  2020-01-10 04:05:29
+ * @author leery
+ * @since  2020-09-01 08:05:29
  */
 public interface CategoryService extends IService<Category> {
 

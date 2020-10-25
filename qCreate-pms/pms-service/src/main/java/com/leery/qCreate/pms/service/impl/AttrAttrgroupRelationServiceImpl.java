@@ -19,8 +19,8 @@ import java.util.List;
 @Service("attrAttrgroupRelationService")
 public class AttrAttrgroupRelationServiceImpl extends ServiceImpl<AttrAttrgroupRelationDao, AttrAttrgroupRelation> implements AttrAttrgroupRelationService {
 
-	@Autowired
-	private AttrAttrgroupRelationDao attrAttrgroupRelationDao;
+    @Autowired
+    private AttrAttrgroupRelationDao attrAttrgroupRelationDao;
 
     @Override
     public PageVo queryPage(QueryCondition params) {
@@ -32,20 +32,20 @@ public class AttrAttrgroupRelationServiceImpl extends ServiceImpl<AttrAttrgroupR
         return new PageVo(page);
     }
 
-	@Override
-	@Transactional
-	public void deleteByAttrIdAndAttrGroupId(List<AttrAttrgroupRelation> relations) {
-		relations.forEach(relationEntity -> {
-			this.remove(new QueryWrapper<AttrAttrgroupRelation>()
-					.eq("attr_id", relationEntity.getAttrId())
-					.eq("attr_group_id", relationEntity.getAttrGroupId())
-			);
-		});
-	}
+    @Override
+    @Transactional
+    public void deleteByAttrIdAndAttrGroupId(List<AttrAttrgroupRelation> relations) {
+        relations.forEach(relationEntity -> {
+            this.remove(new QueryWrapper<AttrAttrgroupRelation>()
+                    .eq("attr_id", relationEntity.getAttrId())
+                    .eq("attr_group_id", relationEntity.getAttrGroupId())
+            );
+        });
+    }
 
-	@Override
-	public AttrAttrgroupRelation selectById(Long id) {
-		return attrAttrgroupRelationDao.selectById(id);
-	}
+    @Override
+    public AttrAttrgroupRelation selectById(Long id) {
+        return attrAttrgroupRelationDao.selectById(id);
+    }
 
 }

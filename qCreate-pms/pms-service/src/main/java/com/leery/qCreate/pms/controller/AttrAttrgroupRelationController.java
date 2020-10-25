@@ -3,7 +3,6 @@ package com.leery.qCreate.pms.controller;
 import java.util.Arrays;
 import java.util.List;
 
-
 import com.java.core.bean.PageVo;
 import com.java.core.bean.QueryCondition;
 import com.java.core.bean.Resp;
@@ -16,13 +15,10 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 
-
-
-
 /**
  * 属性&属性分组关联
- * @author jiangli
- * @since  2020-01-10 04:05:29
+ * @author leery
+ * @since 2020-09-01 08:05:29
  */
 @Api(tags = "属性&属性分组关联管理")
 @RestController
@@ -49,7 +45,6 @@ public class AttrAttrgroupRelationController {
 
         return Resp.ok(page);
     }
-
 
     /**
      * 信息
