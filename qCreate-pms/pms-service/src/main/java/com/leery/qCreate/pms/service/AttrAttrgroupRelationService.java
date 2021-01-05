@@ -21,5 +21,6 @@ public interface AttrAttrgroupRelationService extends IService<AttrAttrgroupRela
 	void deleteByAttrIdAndAttrGroupId(List<AttrAttrgroupRelation> relations);
 
     AttrAttrgroupRelation selectById(Long id);
+
 }
 

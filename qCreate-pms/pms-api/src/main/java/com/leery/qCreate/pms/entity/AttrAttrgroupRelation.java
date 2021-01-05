@@ -10,7 +10,7 @@ import lombok.Data;
 
 /**
  * 属性&属性分组关联
- * @author jiangli
+ * @author leery
  * @since 2020-01-10 04:05:29
  */
 @ApiModel

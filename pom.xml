@@ -24,6 +24,8 @@
 		<module>qCreate-oms</module>
 		<module>qCreate-sms</module>
 		<module>qCreate-wms</module>
+		<module>qCreate-order</module>
+		<module>qCreate-seckill</module>
 	</modules>
 
 	<properties>
